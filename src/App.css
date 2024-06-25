@@ -1,0 +1,103 @@
+.article_card{
+    border-color: grey;
+    border-style: solid;
+    border-width: 2px;
+
+    display: inline-grid;
+
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+
+    border-radius: 1%;
+
+    justify-content: space-between;
+    width: fit-content;
+
+}
+
+.image_container img{
+    width: 100%;
+}
+
+.data_container{
+    display: inline-grid;
+    text-align: center;
+    padding: 2px 16px;
+}
+
+.product_brand{
+    margin-top: 0%;
+    text-align: left;
+    margin-bottom: 3%;
+}
+
+.product_name{
+    margin-top: 0%;
+    text-align: left;
+}
+
+.stok_price{
+    display: flex;
+    justify-content: space-between;
+}
+
+.stok_price p{
+    font-size: 20px;
+}
+
+.button_container{
+    display: flex;
+    
+}
+
+.button_card{
+    margin: auto;
+
+    width: 60%;
+    height: 40px;
+
+    margin-bottom: 3%;
+
+    color: rgb(0, 0, 0);
+    background-color: rgba(112, 253, 147, 0.26);
+
+    border-radius: 8px;
+    border-color: white;
+}
+
+.button_card:hover{
+    background-color: rgba(51, 252, 101, 0.644);
+    transition: .2s ease background-color;
+}
+
+.button_card_inCart{
+    margin: auto;
+
+    width: 60%;
+    height: 40px;
+
+    margin-bottom: 3%;
+
+    color: rgb(0, 0, 0);
+    background-color: rgba(51, 252, 101, 0.644);
+
+    border-radius: 8px;
+    border-color: white;
+}
+
+.button_card_inCart:hover .button_card_productText {
+    display: none;
+}
+
+.button_card_inCart:hover{
+    background-color: rgba(112, 253, 147, 0.26);
+    transition: .3s ease all;
+}
+
+.button_card_inCart:hover .button_card_productOut{
+    display: block;
+}
+
+.button_card_productOut{
+    display: none;
+}
